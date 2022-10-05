@@ -1,0 +1,86 @@
+/* Sidebar */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Secular+One&display=swap');
+.left-sidebar .brand-names{
+    font-family: 'Righteous', cursive;
+    font-size: 2.2rem;
+    line-height:40px;
+}
+.left-sidebar{
+    background-color: #edf7fa;
+    position: fixed;
+    float: left;
+}
+@media screen and (min-width:575px){
+    .left-sidebar .sm-menu{
+        display: none;
+    }
+}
+
+/* Right Bar */
+.right-bar{
+    float: right;
+}
+/* Akhir Right Bar */
+
+/* Akhir Sidebar */
+
+/* Login Form */
+#content{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-login .btn-fb{
+    background-color: #003f5c;
+}
+.container-login .btn-twt{
+    background-color: #55acee;
+}
+.container-login .input-login{
+    border: none;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .5);
+    background-color: #ededed;
+}
+.container-login .input-login::placeholder{
+    font-size: .8em;
+}
+.container-login .btn-twt,
+.container-login .btn-fb{
+    font-size: .8em;
+    font-weight: bold;
+}
+.container-login .form-label{
+    font-size: .9em;
+}
+.container-login .daftar-text{
+    font-size: .8em;
+}
+.container-login .btn-masuk{
+    background-color: #ff4e4e;
+    color: #ffffff;
+}
+.container-login .btn-masuk:hover{
+    background-color: #ff3232;
+
+}
+.container-awal .text-copyright{
+    font-size: .7em;
+}
+
+/* Akhir Login Form */
+/* Card Body */
+.card{
+    overflow-y: hidden;
+}
+.card-body{
+    bottom: -100%;
+    position: absolute;
+    background: #ffffff;
+    transition: 1s ease;
+}
+.card:hover > .card-body{
+    bottom: 0;
+}

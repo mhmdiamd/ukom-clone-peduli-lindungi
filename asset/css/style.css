@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crete+Round&family=Raleway:wght@100&family=Sora&display=swap');
+/* Secular one */
+/* font-family: 'Archivo Black', sans-serif; */
+
+/* Universal style */
+.color-default{
+    color: #3fc3d0;
+}
+.bg-default{
+    background-color: #3fc3d0;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+@keyframes linearBar {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* Sidebar */
+.col-sidebar {
+    animation: .6s linearBar ease-in;
+}
+.sidebar{
+    background-color: #3fc3d0;
+    
+}
+.sidebar .sidebar-items .nav-link{
+    color: #fafafa;
+}
+.sidebar .sidebar-items.active-link{
+    /* border-right: 4px solid #3fc3d0; */
+    border-radius: 25px 0 0 25px;
+    background-color: #ffffff;
+}
+.sidebar .sidebar-items.active-link .menu-icon {
+    color: #3fc3d0;
+}
+.sidebar .sidebar-items.active-link .menu-text{
+    color: black;
+}
+
+.sidebar .sidebar-items:hover{
+    border-radius: 25px 0 0 25px;
+    background-color: #ffffff;
+
+}
+.sidebar .sidebar-items:hover > .nav-link .menu-icon{
+    color: #3fc3d0;
+}
+.sidebar .sidebar-items:hover > .nav-link .menu-text{
+    color: #000000;
+}
+.sidebar .menu-logout a{
+    color: #fafafa;
+}
+.sidebar .menu-logout a:hover {
+    color: #000;
+}
+
+.sidebar-header{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/vaccine.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    border-bottom: 2px solid #fff;
+}
+
+/* User Information */
+.user-information{
+    position: relative;
+    animation: 1s userInformation linear;
+}
+/* .data-user{
+    width: max-content;
+} */
+
+
+/* Penduduk beranda */
+/* Content */
+
+/* Content Card */
+.col-content .card{
+    background-color: #f8f8f8;
+    min-height: 160px;
+    overflow-y: hidden;
+}
+.col-content .card .card-icon{
+    color: #3fc4d0b4;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    right: 20px;
+    font-size: 4em;
+
+}
+.col-content .card .card-body{
+    position: relative;
+    z-index: 2;
+}
+
+.col-content .card .card-info{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(164,247,255,1) 0%, rgba(63,195,208,1) 100%);
+    z-index: 3;
+    color: #ffffff;
+    transition: .3s linear;
+}
+.col-content .card .close-btn{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.col-content .card .btn-info{
+    cursor: pointer;
+    width: max-content;
+}
+
+.col-content .card-lokasi{
+    background: linear-gradient(0deg, rgba(164,247,255,1) 0%, rgba(63,195,208,1) 100%);
+}
+
+/* Responsive */
+@media screen and (max-width: 880px){
+    .sidebar .sidebar-menu{
+        margin-top: 50px;
+    }
+    .sidebar-header{
+        display: none;
+    }
+
+    .sidebar .sidebar-items .menu-text{
+        display: none;
+    }
+    .sidebar .menu-logout-text {
+        display: none;
+    }
+    
+}
